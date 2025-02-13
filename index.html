@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pokefan Survey Form</title> <!-- Change This Later -->
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body id="main">
+        <div id="div-cover_photo">
+            <img src="images/cover_photo.jpg" id="cover_photo" />
+        </div>
+
+        <div class="w3-container" id="main_container">
+            <div id="title_container">
+                <h1 id="title">Gotta play 'em all!</h1> <!-- User story no. 1 -->
+            </div>
+
+            <div id="desc_container">
+                <p id="description"> <!-- User story no. 2 -->
+                    Hello fellow trainer, <br /><br />
+                    
+                    <span id="indent_desc">This survey seeks to gather information about the favorite Pokemon Title played by each trainers and their experience 
+                    with the franchise. </span><br /><br />
+
+                    Thank you for taking the time to answer our short survey! 
+                </p>
+            </div>
+
+            <form method="get" id="survey-form"><!-- User story no. 3 & 17-->
+                <label for="full_name" class="label_custom" id="name-label">Name</label> <!-- User story no. 10 -->
+                <input type="text" class="w3-input" id="name" name="full_name" required placeholder="Ash Ketchum" /><br /><!-- User story no. 4 & 11 -->
+
+                <label for="email_address" class="label_custom" id="email-label">Email</label> <!-- User story no. 10 -->
+                <input type="email" class="w3-input" id="email" name="email_address" required placeholder="ashketchum01@email.com" /><br /> <!-- User story no. 5, 6, & 11 -->
+
+                <label for="years_played" class="label_custom" id="number-label">How long have you been playing Pokemon Games? (year/s)</label><!-- User story no. 10 -->
+                <input type="number" class="w3-input" id="number" name="years_played" min="0" max="29" placeholder="25" /><br /><!-- User story no. 7, 8, 9, & 11 -->
+                
+                <label for="fave_game" class="label_custom">Favorite Pokemon Game</label>
+                <select name="fave_game" class="w3-select w3-border" id="dropdown"> <!-- User story no. 12 -->
+                    <option selected disabled>What is your all time favorite pokemon game?</option>
+                    <option value="Red/Blue/Green">Pokemon Red/Blue/Green (Gen 1)</option>
+                    <option value="Gold/Silver/Crystal">Pokemon Gold/Silver/Crystal (Gen 2)</option>
+                    <option value="LeafGreen/FireRed">Pokemon LeafGreen/FireRed (Gen 3)</option>
+                    <option value="Ruby/Sapphire/Emerald">Pokemon Ruby/Sapphire/Emerald (Gen 3)</option>
+                    <option value="Pokemon Diamond/Pearl/Platinum">Pokemon Diamond/Pearl/Platinum (Gen 4)</option>
+                    <option value="Pokemon Heartgold/Soulsiver">Pokemon Heartgold/Soulsiver (Gen 4)</option>
+                </select><br /><br />
+
+                <img src="images/pikachu_header.png" id="pkc_header" />
+
+                <label for="console" class="label_custom">Nintendo Consoles Owned</label><br /><!-- User story no. 14 -->
+                <input type="checkbox" class="w3-check" id="gameboy_color" name="console" value="Gameboy Color"><span class="option_custom">Gameboy Color</span><br />
+                <input type="checkbox" class="w3-check" name="console" value="Gameboy Advance"><span class="option_custom">Gameboy Advance</span><br />
+                <input type="checkbox" class="w3-check" name="console" value="Gameboy Advance SP"><span class="option_custom">Gameboy Advance SP</span><br />
+                <input type="checkbox" class="w3-check" name="console" value="Nintendo DS"><span class="option_custom">Nintendo DS</span><br />
+                <input type="checkbox" class="w3-check" name="console" value="Nintendo DSi"><span class="option_custom">Nintendo DSi</span><br />
+                <input type="checkbox" class="w3-check" name="console" value="Nintendo 3DS"><span class="option_custom">Nintendo 3DS</span><br />
+                <input type="checkbox" class="w3-check" name="console" value="Nintendo Switch"><span class="option_custom">Nintendo Switch</span><br /><br />
+
+                <label for="condition_sidegames" class="label_custom">Do you play Pokemon Games outside the main series?</label><!-- User story no. 13 -->
+                <input type="radio" class="w3-radio " name="condition_sidegames" value="yes" checked><span class="option_custom">Yes</span>
+                <input type="radio" class="w3-radio" name="condition_sidegames" value="no"><span class="option_custom">No</span><br />
+
+                <label for="condition_TCG" class="label_custom">Do you play The Pokemon Card Game?</label><!-- User story no. 13 -->
+                <input type="radio" class="w3-radio" name="condition_TCG" value="yes" checked><span class="option_custom">Yes</span>
+                <input type="radio" class="w3-radio" name="condition_TCG" value="no"><span class="option_custom">No</span><br /><br />
+
+                <label for="experience" class="label_custom">Describe your experience playing Pokemon throughout the years!</label><!-- User story no. 15 -->
+                <textarea name="experience" class="w3-input" maxlength="100" rows="5"></textarea> <br />
+
+                <input type="submit" class="w3-button w3-black w3-round-small label_custom" id="submit" value="Submit my responses" /><br /><!-- User story no. 16 -->
+            </form>
+        </div>
+    </body>
+</html>

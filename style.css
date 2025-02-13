@@ -1,0 +1,111 @@
+#main {
+    background-color: #F7CD82;
+}
+
+/* Cover Photo Section */
+#div-cover_photo{
+    width: 40%;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.3);
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    margin:auto;
+    margin-top: 10px;
+}
+
+#cover_photo {
+    max-width: 100%;
+    height: auto;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+}
+/* Cover Photo Section ENDS here */
+
+/* Form Container Section */
+#main_container {
+    background-color: #F9F0DD;
+    width: 50%;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.3);
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+/* Title and Description Section */
+h1, #title {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #474747;
+    font-weight: bold;
+    font-size: 2.8vw;
+    text-align: center;
+    text-shadow: 1px 1px #FFFFFF;
+}
+
+#title_container {
+    max-width: 70%;
+    height: auto;
+    margin: auto;
+    margin-top: 15px;
+    padding: 1px;
+}
+
+#desc_container {
+    max-width: 55%;
+    height: auto;
+    margin: auto;
+    padding: 4px;
+
+    border: 1.5px #474747;
+    border-style: solid;
+    border-radius: 15px;
+}
+
+#description {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #474747;
+    font-size: 13px;
+    text-align: justify;
+}
+
+#indent_desc {
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+/* Title and Description Section ENDS here */
+
+/* Form Section */
+#survey-form {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.label_custom {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #474747;
+    font-size: 17px;
+}
+
+.option_custom {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #474747;
+    font-size: 14px;
+}
+
+#dropdown {
+    background-color: #FFFFFF;
+    height: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #474747;
+    font-size: 13px;
+}
+
+#pkc_header {
+    width: 18%;
+    float: right;
+    margin-right: 20px;
+}
+
+#submit {
+    display: block;
+    margin: auto;
+}
